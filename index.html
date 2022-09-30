@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/keys.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="src/index.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <form id="search">
+        <input list="searchResults" name="search" type="search" placeholder="search symbol">
+        <button id="remove">X</button>
+        <input id="findStock" type="submit" name="" value="Search">
+        <datalist id="searchResults"></datalist>
+    </form>
+    <div>
+        <img id="logo" src="" alt="">
+    </div>
+    <div id="chartContainer">
+        <canvas id="mainChart"></canvas>
+    </div>
+    <table id="stockInfo">
+        <tr>
+           <th>Name: </th> 
+           <td id="company-name"></td>
+        </tr>
+        <tr>
+            <th>Exchange: </th>
+            <td id="exchange"></td>
+        </tr>
+        <tr>
+            <th>Country: </th>
+            <td id="country"></td>
+        </tr>
+        <tr>
+            <th>Currency: </th>
+            <td id="currency"></td>
+        </tr>
+        <tr>
+            <th>Sector: </th>
+            <td id="sector"></td>
+        </tr>
+        <tr>
+            <th>52 Week High: </th>
+            <td id="52-week-high"></td>
+        </tr>
+        <tr>
+            <th>52 Week Low: </th>
+            <td id="52-week-low"></td>
+        </tr>
+        <tr>
+            <th>P/E Ratio: </th>
+            <td id="PE-ratio"></td>
+        </tr>
+        <tr>
+            <th>Description: </th>
+            <td id="description"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
